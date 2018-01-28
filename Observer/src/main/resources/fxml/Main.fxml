@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1280.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <Region opacity="0.62" prefHeight="300.0" prefWidth="200.0" styleClass="loginback" />
+      <Label fx:id="welcome" styleClass="heading">
+         <VBox.margin>
+            <Insets top="-290.0" />
+         </VBox.margin></Label>
+      <Label styleClass="heading" text="Search:">
+         <VBox.margin>
+            <Insets bottom="-20.0" right="1000.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="searchQuery" maxWidth="200.0">
+         <VBox.margin>
+            <Insets right="700.0" />
+         </VBox.margin>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#handleLogoutButton" styleClass="is-primary" text="Log out">
+         <VBox.margin>
+            <Insets left="1200.0" top="-20.0" />
+         </VBox.margin>
+      </Button>
+      <TableView fx:id="table">
+        <columns>
+            <TableColumn fx:id="urlColumn" prefWidth="364.0" text="URL" />
+          <TableColumn fx:id="websiteColumn" minWidth="0.0" prefWidth="530.0" text="Account name" />
+          <TableColumn fx:id="usernameColumn" maxWidth="1028.0" minWidth="-1.0" prefWidth="351.0" text="Username" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </TableView>
+      <Button mnemonicParsing="false" onAction="#addAccount" styleClass="is-primary" text="Add account">
+         <VBox.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" minHeight="720.0" minWidth="1280.0" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateAccountController">
+   <children>
+      <Label styleClass="heading" text="Create an account that you want to store.">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <Label styleClass="heading" text="Account name">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label styleClass="heading" text="Username">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label styleClass="heading" text="Password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label styleClass="heading" text="URL">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER">
+               <children>
+                  <TextField fx:id="accountnameField" prefWidth="300.0">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="usernameField" prefWidth="300.0">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="passwordField">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <TextField fx:id="urlField" prefWidth="300.0">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </HBox>
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleAddAccount" styleClass="button, is-primary" text="Add account">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleBackButton" styleClass="is-primary" text="Go back">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="700.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
